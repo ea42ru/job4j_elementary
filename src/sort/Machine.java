@@ -11,11 +11,10 @@ public class Machine {
 
         while (cha > 0) {
             for (int i = 0; i < coins.length; i++) {
-                if (cha >= coins[i]) {
+                while (cha >= coins[i]) {
                     cha = cha - coins[i];
                     rsl[size] = coins[i];
                     size++;
-                    break;
                 }
             }
         }
