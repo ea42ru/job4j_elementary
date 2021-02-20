@@ -5,7 +5,6 @@ public class EndsWith {
         if (post.length > word.length) {
             return false;
         }
-
         int shift = word.length - post.length;
         for (int i = 0; i < post.length; i++) {
             if (word[i + shift] != post[i]) {

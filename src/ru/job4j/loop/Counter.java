@@ -2,11 +2,11 @@ package ru.job4j.loop;
 
 public class Counter {
     public static int sum(int start, int finish) {
-        int sum = 0;
+        int summa = 0;
         for (int i = start; i <= finish; i++) {
-            sum = sum + i;
+            summa = summa + i;
         }
-        return sum;
+        return summa;
     }
 
     public static void main(String[] args) {

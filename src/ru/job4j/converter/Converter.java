@@ -2,26 +2,26 @@ package ru.job4j.converter;
 
 public class Converter {
     public static int rubleToEuro(int value) {
-        int rsl = value / 70;
-        return rsl;
+        int result = value / 70;
+        return result;
     }
 
     public static int rubleToDollar(int value) {
-        int rsl = value / 60;
-        return rsl;
+        int result = value / 60;
+        return result;
     }
 
     public static void main(String[] args) {
-        int in = 140;
+        int input = 140;
         int expected = 2;
-        int out = Converter.rubleToEuro(in);
-        boolean passed = expected == out;
+        int output = Converter.rubleToEuro(input);
+        boolean passed = expected == output;
         System.out.println("140 rubles are 2. Test \"rubleToEuro\" result : " + passed);
 
-        in = 180;
+        input = 180;
         expected = 3;
-        out = Converter.rubleToDollar(in);
-        passed = expected == out;
+        output = Converter.rubleToDollar(input);
+        passed = expected == output;
         System.out.println("180 rubles are 3. Test \"rubleToDollar\" result : " + passed);
     }
 }

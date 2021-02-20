@@ -2,9 +2,9 @@ package ru.job4j.loop;
 
 public class Symmetry {
     public static boolean check(int i) {
-        String s = "" + i;
-        for (int j = 0; j < s.length() / 2; j++) {
-            if (s.charAt(j) != s.charAt(s.length() - 1 - j)) {
+        String number = "" + i;
+        for (int j = 0; j < number.length() / 2; j++) {
+            if (number.charAt(j) != number.charAt(number.length() - 1 - j)) {
                 return false;
             }
         }

@@ -5,19 +5,18 @@ public class Cryptography {
         if (s.equals("")) {
             return "empty";
         }
-
         if (s.length() <= 4) {
             return s;
         }
-
-        String ret = "";
+        String result = "";
         for (int i = 0; i < s.length(); i++) {
             if ((s.length() - i) > 4) {
-                ret = ret + "#";
+                result = result + "#";
             } else {
-                ret = ret + s.charAt(i);
+                result = result + s.charAt(i);
             }
         }
-        return ret;
+        return result;
     }
 }
+
