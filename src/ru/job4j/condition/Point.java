@@ -11,6 +11,7 @@ public class Point {
     public Point(int first, int second) {
         this.x = first;
         this.y = second;
+        this.z = 0;
     }
 
     public Point(int x, int y, int z) {
@@ -28,7 +29,7 @@ public class Point {
     }
 
     public void info() {
-        System.out.println("Point[" + this.x + ", " + this.y + "]");
+        System.out.println("Point[" + this.x + ", " + this.y + ", " + this.z + "]");
     }
 
     public static void main(String[] args) {

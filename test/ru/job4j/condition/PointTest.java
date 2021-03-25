@@ -53,5 +53,14 @@ public class PointTest {
         Assert.assertEquals(expected, out, 0.01);
     }
 
+    @Test
+    public void when222222to333333then1905() {
+        double expected = 19.05;
+        Point a = new Point(22, 22, 22);
+        Point b = new Point(33, 33, 33);
+        double out = a.distance3d(b);
+        Assert.assertEquals(expected, out, 0.01);
+    }
+
 
 }
